@@ -9,9 +9,9 @@
 
   <bean id="quartzDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
     <property name="driverClassName" value="org.postgresql.Driver"/>
-    <property name="url" value="jdbc:postgresql://localhost:5432/quartz"/>
-    <property name="username" value="quartz"/>
-    <property name="password" value="quartz"/>
+    <property name="url" value="jdbc:postgresql://localhost:5432/postgres"/>
+    <property name="username" value="postgres"/>
+    <property name="password" value="postgres"/>
   </bean>
 
   <bean id="quartz" class="org.apache.camel.component.quartz.QuartzComponent">
